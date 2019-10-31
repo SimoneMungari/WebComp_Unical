@@ -1,0 +1,19 @@
+@charset "UTF-8";
+h1 {
+	color: red;
+	text-shadow: 3px 1px blue;
+}
+
+h3 { color: blue;}
+
+.intestazione{
+		text-align:left;
+	}
+	
+article+article{
+	position:relative;
+	left:50%;
+	top:0px;
+	
+	
+}
