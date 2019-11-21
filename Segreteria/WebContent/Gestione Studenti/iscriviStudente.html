@@ -1,38 +1,91 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Iscriviti!</title>
-	</head>
-	<body>
-		<a href="http://www.unical.it"><img src="images/logo.png"></a>
-		<div id="tabella dati">
-			<table>
-				<thead>
-					Inserisci i tuoi dati
-				</thead>
-				<tr>
-					<td><strong>Nome</strong></td>
-					<td><input type="text"></td>
-				</tr>
-				<tr>
-					<td><strong>Cognome</strong></td>
-					<td><input type="text"></td>
-				</tr>
-				<tr>
-					<td><strong>Matricola</strong></td>
-					<td><input type="text"></td>
-				</tr>
-				<tr>
-					<td colspan="3"><input type="button" id="Clicca qui"></td>
-				</tr>
-			</table>
-		</div>
-		<br>
-		<br>
-		<div id="back">
-			<a href="../index.html">Torna indietro</a>
-		</div>
-
-	</body>
+<head>
+<meta charset="ISO-8859-1">
+<title>Iscrizione</title>
+<link rel="stylesheet" href="../css/iscriviStudente.css" type="text/css">
+</head>
+<body>	
+	<div id="wrapper">
+		<form id="modulo1" method="post"
+			action="inviaDatiStudente" id="form">
+			<header id="title">
+				<h1>Iscrizione</h1>
+			</header>
+			<div>
+				<label class="labelField" for="matricola">Matricola</label>
+				<div class="inputField">
+					<input  name="matricola" type="text"
+						value="Matricola" />
+				</div>
+			</div>
+			<div>
+				<label class="labelField" for="nome">Nome</label>
+				<div class="inputField">
+					<input name="nome" type="text"
+						value="Nome" />
+				</div>
+			</div>
+			<div>
+				<label class="labelField" for="nome">cognome</label>
+				<div class="inputField">
+					<input  name="cognome" type="text"
+						value="Cognome" />
+				</div>
+			</div>
+			<div>
+				<label class="labelField" class="control-label col-sm-2" for="dataNascita">Data
+					di nascita</label>
+				<div class="inputField">
+					<input name="dataNascita" type="date"
+						value="Data Nascita" />
+				</div>
+			</div>
+			<div>
+				<label class="labelField" for="password">Password</label>
+				<div class="inputField">
+					<input name="password" type="password" />
+				</div>
+			</div>
+			<div>
+				<label class="labelField" for="password2">Conferma
+					Password</label>
+				<div class="inputField">
+					<input name="password2" type="password" />
+				</div>
+			</div>
+			<div>
+				<label class="labelField" for="dipartimento">Dipartimento</label>
+				<div class="inputField">
+					<select id="dip" name="dipartimento">
+						<option>---</option>
+						<option value="MatInf">Matematica e Informatica</option>					
+					</select>
+				</div>
+			</div>
+			<div>
+				<label class="labelField" for="corsoDiLaurea">Corso
+					di Laurea</label>
+				<div class="inputField">
+					<select id="cLaurea"name="corsoDiLaurea"
+						disabled=true>
+						<option>---</option>
+					</select>
+				</div>
+			</div>
+			<div>
+				<label class="labelField" for="scuola">Scuola di
+					Diploma</label>
+				<div class="inputField">
+					<select class="form-control" name="scuola">
+						<option>---</option>					
+					</select>
+				</div>
+			</div>
+			<input type="submit" /> 
+			<input
+				 type="reset" />
+		</form>
+	</div>
+</body>
 </html>

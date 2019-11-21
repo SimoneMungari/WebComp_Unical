@@ -4,16 +4,22 @@ h1 {
 	text-shadow: 3px 1px blue;
 }
 
-h3 { color: blue;}
 
 .intestazione{
 		text-align:left;
+		color:blue !important;
 	}
+#a{
+	color:red;
+}
 	
+article {
+	position:absolute;
+	width:50%;
+}
+
 article+article{
-	position:relative;
-	left:50%;
-	top:0px;
-	
+	position:absolute;
+	left:50%;	
 	
 }
